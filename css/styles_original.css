@@ -1,0 +1,517 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  /* max-width: 1200px; */
+  overflow-x: hidden;
+} 
+
+/* Tipos */
+body{
+font-family: 'Nunito Sans', sans-serif;
+} 
+
+h1 {
+color: #081635;
+font-size: 3em;
+}
+
+.h1_span{
+  color: #38d4ad;
+}
+h2{
+  color: #081635;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+h3{
+  color: #081635;
+  font-size: 1.075em;
+  font-weight: 600;
+  line-height: 2em;
+  /* font-family: 'Nunito Sans', sans-serif; */
+}
+h4{
+  color: #081635;
+  font-size: 1em;
+  font-weight: 700;
+}
+p{
+  font-family: 'Inter', sans-serif;
+  color: #6b7280;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
+/* Index header */
+.indexbackground{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(145deg,#def4eee3 28%,#fffbf6,#f6e1c6);
+}
+/* Flex container */
+.flex_container{
+  display: flex;
+  flex-direction: row;
+/* justify content space between pega los primeros 2 elementos a los bordes, luego distribuye en el espacio sobrante  */
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.nav_flex_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.hamburger_menu{
+  display: none;
+}
+nav{
+  margin: 2em;
+  width: 96%;
+}
+nav a{
+  color: #a6a4a4;
+  font-size: 1em;
+  font-weight: 600;
+  }
+
+nav li{
+    /* Sacar los bullets de la lista */
+    list-style-type: none; 
+    text-align: center;
+  }
+
+nav ul li a:hover {
+    display: block;
+    height: 0,4em;
+    width: 100%;
+    color: #606570;
+    font-weight: 700;
+    scale: 1.03;
+  }
+
+.logo {
+  width: 10%;
+}
+#check {
+ display: none;
+}
+
+
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero_figure{
+  max-width: 40%;
+ text-align: center;
+  /* flex-grow: 1; */
+}
+.hero_img{
+  display: block;
+}
+
+.hero_img2{
+  max-width: 560px;
+}
+.hero_text{
+  /* flex-basis: 40%; */
+  max-width: 40%;
+  padding: 0 2em;
+  height: 100%;
+}
+
+.hero_paragraph{
+  padding: 0.75em 0;
+}
+.hero_cta_group{
+  display: flex;
+  grid-column-gap: 24px;
+}
+.hero_cta{
+  display: inline-block;
+  width: fit-content;
+  color: #ffffff;
+  background-color: #38d4ad;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  border-style: solid;
+  border-color: #38d4ad;
+  border-width: 1px;
+}
+
+.hero_cta:hover{
+  background-color: #279f81;
+  transition: background-color 1s ease-out;
+}
+
+
+.hero_secondary_cta{
+  display: inline-block;
+  width: fit-content;
+  color: #6b7280;
+  background-color: #ffffff;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  border-style: solid;
+  border-color: #6b7280;
+  border-width: 1px;
+}
+
+
+.banner_h2{
+  color: #ffffff;
+} 
+.height_cabecera{
+  overflow: visible;
+}
+.main_maxwidth{
+  width: 40%;
+}
+
+.beneficios_flexcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 6em 0;
+  justify-content: center;
+}
+.card_beneficios{
+  width: 25%;
+  background-color:transparent;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  margin: 2em;
+}
+.card_pricing{
+  width: 25%;
+  background-color:transparent;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  margin: 2em;
+  border: 0.5px solid #f3f3f3;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: -4px 11px 13px 2px rgb(18 170 132 / 17%);
+}
+
+.icon_beneficios{
+  max-width: 42px;
+  margin-bottom: 0.75em;
+}
+ol{
+color: #38d4ad;
+list-style-type: decimal;
+list-style-position: inside;
+
+}
+.list_paragraph{
+ display: inline; 
+ font-weight: 400;
+ line-height: 2.5em;
+}
+
+
+.banner{
+  background-color: #081635;
+  margin: 10em 0;
+  padding: 6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+.imgbanner1{
+  position: absolute;
+  width: 40%;
+   
+}
+
+.imgbanner2{
+  width: 10%;
+  position: absolute;
+  left: 80%;
+}
+.banner_h2{
+  text-align: center;
+  max-width: 60%;
+}
+
+
+.pasos{
+  margin: 0.5em 0;
+}
+
+.imgpasos{
+  width: 25%;
+}
+
+.primary_button{
+  color: #ffffff;
+  background-color: #38d4ad;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.25em;
+  margin: 2em 0;
+  width: auto;
+}
+
+article{
+  width: 100%;
+  height: fit-content;
+  margin: 1em;
+}
+
+
+
+.head_seaction{
+  margin: 1em;
+  max-width: 96%;
+}
+
+a{
+  text-decoration: none;
+}
+.checkicon{
+    background: url('/assets/Img/checkicon.svg') no-repeat;
+    height: 40px;
+    padding-left: 44px;
+    align-items: center;
+  }
+ 
+ 
+
+
+.contact_form form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  padding: 4em;
+  background-color: #f0ecec;
+}
+.qa_grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+}
+
+
+.grid_block{
+  grid-column: 1/3;
+}
+
+
+.label_tyc {
+  align-items: center;
+  display: block;
+  padding-bottom: 2em;
+}
+
+input[ type=checkbox ] {
+ max-width: 24px;
+ 
+  }
+
+.contact_form form input{
+/* width: 100%; */
+padding: 0.5em;
+margin-bottom: 1em;
+}
+
+.contact_form form textarea{
+  /* width: 100%; */
+padding: 0.5em;
+margin-bottom: 1em;
+}
+.contact_form form select{
+  /* width: 100%; */
+padding: 0.5em;
+margin-bottom: 1em;
+} 
+
+.contact_info{ 
+  padding: 4em;
+  background-color: #c1c2c2;
+  
+}
+  .location_icon
+  {
+    background: url('/assets/Img/geo-alt.svg') no-repeat;
+    padding-left: 24px;
+
+  }
+  .phone_icon
+  .email_icon
+
+
+/* tabs */
+/* Style the tab */
+.tab {
+    margin-top: 4em;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+  /* responsive */
+
+  @media screen and (max-width: 400px){
+    h1 {
+      color: #081635;
+      font-size: 2em;
+      }
+      
+    .hero{
+      flex-direction: column;
+         }
+
+  .hero_text{
+    max-width: 90%;
+    display: block;
+    padding: 0 1em;
+  }
+  .hero_figure{
+    max-width: 80%;
+    display: block;
+    /*   */
+    padding-top: 2em;
+  }
+  
+.logo {
+  width: 40%;
+  margin: 1em;
+}
+
+.beneficios_flexcontainer{
+  flex-direction: column;
+}
+.card_beneficios{
+  width: 80%;
+}
+.h3{
+  font-size: 1.5em;
+}
+.banner_h2{
+  max-width: 80%;
+}
+
+.hamburger_menu{
+  display: block;
+  margin-top: 0.5em;
+  color: #6b7280;
+  max-width: 42px;
+  font-size: 24px;
+  cursor: pointer;
+  /* margin-right: 20px; */
+}
+nav{
+  margin: 0em;
+  width: 100%;
+}
+nav ul{
+  position: fixed;
+  width: 100%;
+  /* height: 100vh; */
+  height: 0vh;
+  top: 60px;
+  text-align: center;
+  background-color: #fff;
+  text-align: center;
+  transition: all .20s;
+}
+
+.nav_flex_container{
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+nav li{
+    /* display:block; */
+    display: none;
+    line-height: 30px;
+    margin: 20px 0;
+    transition: all .5s;
+  }
+
+  #check:checked ~ .nav_flex_container {
+    height: 100vh;
+  }
+
+  #check:checked ~ .nav_flex_container li {
+    display: block;
+  }
+
+  .contact_form form{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .qa_grid{
+    display: flex;
+    flex-direction: column;
+  }
+  article{
+    width: 90%;
+  }
+  /* nav li a.active, nav li a.active:hover {
+    display: block;
+      height: 0,4em;
+      width: 100%;
+      color: #606570;
+      font-weight: 700;
+      scale: 1.03;
+  } */
+}
+
+
+
+
