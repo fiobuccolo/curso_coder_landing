@@ -1,0 +1,18 @@
+
+h2{
+  margin: 1em 0 0 1em;
+}
+.qa_grid{
+  margin-top: 1em;  
+  @include propiedades-flex (row,space-evenly,top);
+  flex-wrap: wrap;
+    article{
+        width: 40%;
+        height: fit-content;
+        margin: 1em;
+      }
+      h4{
+        margin-bottom: 0.5em;
+      }
+  }
+  

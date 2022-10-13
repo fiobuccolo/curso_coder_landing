@@ -1,0 +1,48 @@
+
+.head_seaction{
+  h1{
+ @include fonts-values($font-primary,$color-secondary,3em,700,1.4em);
+  span{
+   @include fonts-values($font-primary,$color-primary,1em,700,1.4em);
+  }
+    }
+  p{
+  margin-bottom: 1em;
+  @include fonts-values($font-primary,$color-terciary,1em,400,1.4em);
+}} 
+
+.contact_form{
+  form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  padding: 4em;
+  background-color: #f0ecec;
+      
+    .grid_block{
+      grid-column: 1/3;
+              }
+    .label_tyc {
+      align-items: center;
+      display: block;
+      padding-bottom: 2em;
+    }
+    input[ type=checkbox ] {
+    max-width: 24px;
+      }
+    input{
+    /* width: 100%; */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    }
+    textarea{
+      /* width: 100%; */
+    padding: 0.5em;
+    margin-bottom: 1em;
+      }
+      select{
+        /* width: 100%; */
+      padding: 0.5em;
+      margin-bottom: 1em;
+      } 
+}}

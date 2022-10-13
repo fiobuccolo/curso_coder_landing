@@ -1,0 +1,22 @@
+@mixin propiedades-flex ($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-content ($colums,$rows,$justify,$align){
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin fonts-values ($typo,$color,$size,$weight,$height){
+    font-family: $typo;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}

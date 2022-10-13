@@ -1,0 +1,47 @@
+%hero_cta{
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    width: fit-content;
+    color: #ffffff;
+    background-color: $color-primary;
+    border-radius: 0.25em;
+    border-style: solid;
+    border-color: $color-primary;
+    border-width: 1px;
+    &:hover{
+        background-color: $color-secondary;
+        transition: background-color 1s ease-out;
+    }
+  }
+
+  
+  %h1 {
+    color: $color-secondary;
+    font-size: 3em;
+    }
+    %h1_span{
+      color: $color-primary;
+    }
+    %h2{
+      color: $color-secondary;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    %h3{
+        color: $color-secondary;
+      font-size: 1.075em;
+      font-weight: 600;
+      line-height: 2em;
+    }
+    %h4{
+        color: $color-secondary;
+      font-size: 1em;
+      font-weight: 700;
+    }
+    %p{
+      color: $color-terciary;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 2em;
+    }

@@ -1,0 +1,34 @@
+header{
+    background-image: linear-gradient(145deg,#def4eee3 28%,#fffbf6,#f6e1c6); 
+   .logo{
+    width: 10%;
+   }
+    nav{
+        margin: 2em;
+        width: 96%;
+        @include propiedades-flex (row,space-between,center);    
+        #check {
+            display: none;
+           }
+           .hamburger_menu{
+            display: none;
+           }
+        ul{
+         @include propiedades-flex (row,space-evenly,center); 
+        li{
+            list-style-type: none;;
+            padding: 1em;
+            text-align: center;
+            a{
+                text-decoration: none;
+                @include fonts-values ($font-secondary,$color-terciary,1em,600,1.5em);               
+                &:hover{
+                    color: red;
+    
+                }
+                }
+             }
+         }
+         }
+}
+
