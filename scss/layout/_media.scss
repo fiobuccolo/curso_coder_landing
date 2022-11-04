@@ -68,6 +68,7 @@
 
 .beneficios_flexcontainer{
   @include propiedades-flex (column,center,center);
+  margin-top: 4em;
   div{
     width: 80%;
     h3{
@@ -75,7 +76,22 @@
     }
   }
 }
-.qa_grid{
+
+.internal_section{
+  @include propiedades-flex (column,center,center);
+  .internal_text{
+    width: 80%;
+    h2{
+      font-size: 2em;
+     line-height: 1.4em;
+  }}
+  .hero_figure{
+    width: 80%;
+  }
+}
+.faq{
+  margin: 1em;
+  .qa_grid{
   margin-top: 1em;  
   @include propiedades-flex (column,space-evenly,center);
   flex-wrap: wrap;
@@ -84,7 +100,7 @@
         height: fit-content;
         margin: 1em;
       }
-  }
+  }}
 .contact_form form{
     display: flex;
     flex-direction: column;
@@ -100,4 +116,13 @@ main{
         "box-6";
     }
   }
+
+  .pricing{
+    .head{
+      margin: 1em;
 }
+.card_pricing{
+  width: 90%;
+  margin: 1em;
+}}}
+

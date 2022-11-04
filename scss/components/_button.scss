@@ -10,7 +10,7 @@
     border-color: $color-primary;
     border-width: 1px;
     &:hover{
-        background-color: $color-secondary;
+        background-color: $color-primary-hoover;
         transition: background-color 1s ease-out;
     }
   }

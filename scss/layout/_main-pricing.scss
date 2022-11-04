@@ -1,12 +1,40 @@
+
+.pricing{
+  .head{
+  margin: 2em;
+  h1{
+    @include fonts-values($font-primary,$color-primary,2em,600,1.4em);
+}}
 .card_pricing{
     width: 25%;
     background-color:transparent;
     border-radius: 1em;
-    padding: 1em;
+    padding: 3em;
     text-align: center;
     margin: 2em;
     border: 0.5px solid #f3f3f3;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: -4px 11px 13px 2px rgba(18, 170, 132, 0.17);
+    h3{
+      @include fonts-values($font-primary,$color-primary,1.4em,600,1.4em);
+      margin-bottom: 0.5em;
+  }
+  p{
+    display: inline;
+  }
+  .negocio{
+    @include fonts-values($font-primary,$color-secondary,1em,600,1.4em);
+    display: inline-block;
+  }
+  .iva{
+  @include fonts-values($font-primary,$color-terciary,0.7em,400,1.4em);
+}
+
+  a{
+   margin-top: 2em;
+    @extend %hero_cta;
+  }
+}
+  
   }

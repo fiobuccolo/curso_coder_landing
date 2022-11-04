@@ -1,18 +1,21 @@
 
-h2{
-  margin: 1em 0 0 1em;
-}
+.faq{
+  margin: 2em;
 .qa_grid{
+  width: 96%;
   margin-top: 1em;  
-  @include propiedades-flex (row,space-evenly,top);
+  @include propiedades-flex (row,space-between,top);
   flex-wrap: wrap;
     article{
         width: 40%;
         height: fit-content;
         margin: 1em;
-      }
       h4{
-        margin-bottom: 0.5em;
+        @include fonts-values($font-primary,$color-secondary,1.2em,700,1.4em);
       }
-  }
+      p{
+        margin-bottom: 1em;
+        @include fonts-values($font-primary,$color-terciary,1em,400,1.4em);
+    } 
+  }}}
   

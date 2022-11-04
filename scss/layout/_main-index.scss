@@ -57,18 +57,36 @@
 }
 
 
-
-ol{
-    color: $color-primary;
-    list-style-type: decimal;
-    list-style-position: inside;
-    
-    }
-    .list_paragraph{
-     display: inline; 
-     font-weight: 400;
-     line-height: 2.5em;
-    }
+.internal_section{
+    @include propiedades-flex (row,center,center);
+    margin: 4em 0em;
+        .internal_text{
+            width: 40%;
+            h3{
+            @include fonts-values($font-primary,$color-primary-hoover,1.5em,600,1.5em);
+            margin-bottom: 0,75em;
+             }
+            h2{
+            @include fonts-values($font-primary,$color-secondary,3em,700,1em);
+            margin-bottom: 1em;
+            }
+            p{
+                @include fonts-values($font-primary,$color-terciary,1.2em,300,1.5em);
+                margin-bottom: 1em;
+            }
+            ol{
+            @include fonts-values($font-primary,$color-primary,1em,600,2.5em);
+            list-style-type: decimal;
+            list-style-position: inside;
+            .list_paragraph{
+            @include fonts-values($font-primary,$color-secondary,1em,400,2.5em);
+            display: inline; 
+                     } 
+                    }}   
+       .hero_figure{
+        width: 40%;
+                 }   
+}
     
     .banner{
       background-color: $color-secondary;

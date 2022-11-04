@@ -23,7 +23,7 @@ header{
                 text-decoration: none;
                 @include fonts-values ($font-secondary,$color-terciary,1em,600,1.5em);               
                 &:hover{
-                    color: red;
+                    color: $color-primary-hoover;
     
                 }
                 }
